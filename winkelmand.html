@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="winkelmand.css" />
+    <title>Winkelwagen</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="photos/logo.svg" alt="Bedrijfslogo" />
+      </div>
+      <nav>
+        <span>NL/EN</span>
+        <button>LOG IN</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="promo">
+        <label for="promo">Promo code</label>
+        <input
+          type="text"
+          id="promo"
+          placeholder="Kortingscode"
+          aria-label="Kortingscode invoeren"
+        />
+        <button>Code Toepassen</button>
+      </section>
+
+      <section class="cart">
+        <h2>Winkelwagen</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Prijs</th>
+              <th>Aantal</th>
+              <th>Subtotaal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product">
+                <img
+                  src="photos/HoodieFront.png"
+                  alt="Afbeelding van Search Exe trui"
+                />
+                <span>Search Exe trui</span>
+              </td>
+              <td>100$</td>
+              <td>
+                <input
+                  type="number"
+                  value="3"
+                  min="1"
+                  aria-label="Aantal aanpassen"
+                />
+              </td>
+              <td>300$</td>
+            </tr>
+            <tr>
+              <td class="product">
+                <img src="photos/Hat.png" alt="Afbeelding van Search Exe pet" />
+                <span>Search Exe pet</span>
+              </td>
+              <td>20$</td>
+              <td>
+                <input
+                  type="number"
+                  value="1"
+                  min="1"
+                  aria-label="Aantal aanpassen"
+                />
+              </td>
+              <td>20$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="total-section">
+        <table class="total-table">
+          <tr>
+            <td>Subtotaal</td>
+            <td>320$</td>
+          </tr>
+          <tr>
+            <td>Totaal</td>
+            <td>320$</td>
+          </tr>
+        </table>
+        <button class="checkout">Doorgaan naar Kassa</button>
+      </section>
+    </main>
+  </body>
+</html>
